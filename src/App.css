@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}

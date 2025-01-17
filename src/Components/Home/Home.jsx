@@ -1,0 +1,135 @@
+import React, { useState, useEffect } from "react";
+import "../Home/Home.css";
+import dp from "../../assets/dp.png";
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+  const navigator = useNavigate();
+  const [dynamicText, setDynamicText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [wordIndex, setWordIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const words = ["Full Stack Dev", "MERN | SpringBoot"];
+
+  useEffect(() => {
+    const typeEffect = () => {
+      const currentWord = words[wordIndex];
+      const isWordComplete = !isDeleting && charIndex === currentWord.length;
+      const isWordDeleted = isDeleting && charIndex === 0;
+
+      if (isWordComplete) {
+        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+      } else if (isWordDeleted) {
+        setIsDeleting(false);
+        setWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Move to next word
+      } else {
+        setCharIndex((prevIndex) =>
+          isDeleting ? prevIndex - 1 : prevIndex + 1
+        );
+      }
+    };
+
+    const timer = setTimeout(typeEffect, isDeleting ? 50 : 100); // Typing and deleting speed
+    return () => clearTimeout(timer); // Cleanup timeout
+  }, [charIndex, isDeleting, wordIndex, words]);
+
+  useEffect(() => {
+    setDynamicText(words[wordIndex].substring(0, charIndex));
+  }, [charIndex, wordIndex, words]);
+
+  return (
+    <div id="home-page">
+      <div id="navbar">
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="home">
+        <div className="container">
+          <div className="text-container">
+            <h1>
+              Hi, I am{" "}
+              <ins
+                style={{
+                  color: "#bd53ed",
+                  fontSize: "2rem",
+                  textDecoration: "none",
+                }}
+              >
+                Rahul 👋
+              </ins>
+            </h1>
+
+            <h2>SDE Intern @ Riskonnect</h2>
+            <br />
+            <h1>
+              {" "}
+              <span className="dynamic-text"> {dynamicText}</span>
+            </h1>
+
+            <div className="contact-container">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="mailto:youremail@example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
+            <button
+              onClick={() => {
+                const element = document.querySelector("#skills");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              See More
+            </button>
+          </div>
+
+          <div className="img-container">
+            <img id="profile-pic" src={dp} alt="Profile" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
