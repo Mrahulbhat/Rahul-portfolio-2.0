@@ -83,28 +83,28 @@ const Home = () => {
 
             <div className="contact-container">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/rxhul_bhxt/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-instagram"></i>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/m-rahul-bhat-/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:rahulbhat5122@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-envelope"></i>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Mrahulbhat?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
               >

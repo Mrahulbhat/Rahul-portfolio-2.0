@@ -4,6 +4,7 @@ import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Skills from "./Components/Skills/Skills.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import Projects from "./Components/Projects/Projects.jsx";
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <div>
       <Home />
       <Skills/>
+      <Projects/>
       <Footer/>
     </div>
   );
