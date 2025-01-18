@@ -14,6 +14,15 @@ import postman from "../../assets/postman.svg";
 import mysql from "../../assets/mysql.svg";
 import spring from "../../assets/spring.svg";
 
+import bootstrap from "../../assets/bootstrap.svg";
+import tailwind from "../../assets/tailwind.svg";
+import php from "../../assets/php.svg";
+import postgres from "../../assets/postgres.svg";
+import hibernate from "../../assets/hibernate.svg";
+import vscode from "../../assets/vscode.svg";
+
+
+
 
 const Skills = () => {
   return (
@@ -68,6 +77,26 @@ const Skills = () => {
           <div className="card">
             <img src={mysql} alt="" />
             <p>MySQL</p>
+          </div>
+
+          <div className="card">
+            <img src={postgres} alt="" />
+            <p>Postgres</p>
+          </div><div className="card">
+            <img src={hibernate} alt="" />
+            <p>Hibernate</p>
+          </div><div className="card">
+            <img src={bootstrap} alt="" />
+            <p>Bootstrap</p>
+          </div><div className="card">
+            <img src={tailwind} alt="" />
+            <p>Tailwind</p>
+          </div><div className="card">
+            <img src={php} alt="" />
+            <p>PHP</p>
+          </div><div className="card">
+            <img src={vscode} alt="" />
+            <p>VsCode</p>
           </div>
         </div>
       </div>
