@@ -106,14 +106,15 @@
 .img-container img {
   height: auto;
   width: 65%;
+  animation: glowUp 1.5s ease-in-out infinite alternate;
   border-radius: 50%;
   border: 3px solid #bd53ed;
   object-fit: cover;
 }
-
+/* 
 .img-container img:hover {
   animation: glowUp 1.1s ease-in-out infinite alternate;
-}
+} */
 
 @keyframes glowUp {
   0% {

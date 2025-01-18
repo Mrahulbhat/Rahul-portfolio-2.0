@@ -9,7 +9,7 @@
 }
 
 body {
-  background: radial-gradient(rgb(14, 1, 59), rgb(3, 0, 12), #04043b);
+  background: radial-gradient(rgb(18, 4, 66), rgb(5, 1, 19), #020231);
   opacity: 0;
   animation: fadeIn 2s ease-out forwards;
   animation-delay: 0.6s; /* Add delay if needed */
