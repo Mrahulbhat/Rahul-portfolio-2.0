@@ -7,7 +7,7 @@
 
 .skills-container {
   display: grid;
-  margin-top: 5vh;
+  margin-top: 10vh;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   column-gap: 3vw;
@@ -54,7 +54,7 @@
 
 #skills h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 

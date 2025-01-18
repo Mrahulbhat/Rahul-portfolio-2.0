@@ -6,7 +6,7 @@ import css from "../../assets/css.svg";
 import js from "../../assets/js.svg";
 import java from "../../assets/java.svg";
 import react from "../../assets/react.svg";
-import python from "../../assets/python.svg";
+import c from "../../assets/c.svg";
 import node from "../../assets/node.svg";
 import mongodb from "../../assets/mongodb.svg";
 import express from "../../assets/express.svg";
@@ -20,9 +20,6 @@ import php from "../../assets/php.svg";
 import postgres from "../../assets/postgres.svg";
 import hibernate from "../../assets/hibernate.svg";
 import vscode from "../../assets/vscode.svg";
-
-
-
 
 const Skills = () => {
   return (
@@ -47,8 +44,8 @@ const Skills = () => {
             <p>Java</p>
           </div>
           <div className="card">
-            <img src={python} alt="" />
-            <p>Python</p>
+            <img src={c} alt="" />
+            <p>C Language</p>
           </div>
           <div className="card">
             <img src={react} alt="" />
@@ -82,19 +79,24 @@ const Skills = () => {
           <div className="card">
             <img src={postgres} alt="" />
             <p>Postgres</p>
-          </div><div className="card">
+          </div>
+          <div className="card">
             <img src={hibernate} alt="" />
             <p>Hibernate</p>
-          </div><div className="card">
+          </div>
+          <div className="card">
             <img src={bootstrap} alt="" />
             <p>Bootstrap</p>
-          </div><div className="card">
+          </div>
+          <div className="card">
             <img src={tailwind} alt="" />
             <p>Tailwind</p>
-          </div><div className="card">
+          </div>
+          <div className="card">
             <img src={php} alt="" />
             <p>PHP</p>
-          </div><div className="card">
+          </div>
+          <div className="card">
             <img src={vscode} alt="" />
             <p>VsCode</p>
           </div>
