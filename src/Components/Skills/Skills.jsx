@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <div id="skills">
       <div>
-        <h1>Skills </h1>
+        <h1>Skills | Tech Stack </h1>
         <div className="skills-container">
           <div className="card">
             <img src={html} alt="" />
