@@ -45,13 +45,14 @@ const Projects = () => {
         <div className="p-subheading">
           <p>Personal | Practice Projects </p>
         </div>
-        <div className="projects-subcontainer-easy">
+        <div className="projects-subcontainer">
           <img src={kavoor} alt="" />
           <img src={sat} alt="" />
+        </div>
+        <div className="projects-subcontainer-easy">
           <img src={sgpacalcpic} alt="" />
           <img src={weather} alt="" />
           <img src={tictactoe} alt="" />
-          <img src={sat} alt="" />
 
         </div>
       </div>
