@@ -39,7 +39,7 @@
 }
 
 #skills img {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
 }
 
@@ -47,7 +47,7 @@
   .skills-container {
     border: 1px solid #565688;
     margin-top: 4vh;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1vw;
     row-gap: 2vh;
@@ -73,12 +73,12 @@
 
   #skills h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 
   #skills img {
-    height: 7vh;
+    height: 2.2rem;
     width: 100%;
   }
 }
