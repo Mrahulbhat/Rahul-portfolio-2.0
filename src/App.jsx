@@ -5,12 +5,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Skills from "./Components/Skills/Skills.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Projects from "./Components/Projects/Projects.jsx";
+import About from "./Components/About/About.jsx";
 
 
 const App = () => {
   return (
     <div>
       <Home />
+      <About/>
       <Skills/>
       <Projects/>
       <Footer/>

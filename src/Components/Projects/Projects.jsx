@@ -17,7 +17,7 @@ const projectDetails = [
   { src: c4p, title: "Code4Placements", description: "A MERN stack based coding platform for coding and placement preparation." },
   { src: spotify, title: "Spotify Clone", description: "Build a spotify clone using React.Js and Tailwind CSS as a practice project" },
   { src: ems, title: "Employee Management System", description: "Made using React Js and Spring Boot to manage employee records." },
-  { src: bgarage, title: "Bike Garage", description: "Personal vehicle maintenance tracker using the MERN stack." },
+  { src: bgarage, title: "Vehicle Maintenance App", description: "Personal vehicle maintenance tracker using the MERN stack." },
   { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
   { src: cashbook, title: "Cashbook", description: "A personal cashbook application made using PHP." },
   { src: kavoor, title: "Kavoor Website", description: "SOP Project made using React JS and Tailwind CSS." },
