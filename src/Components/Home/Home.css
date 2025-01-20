@@ -216,7 +216,7 @@ button:active {
 
   #navbar {
     height: auto;
-    padding: 2vh 0;
+    padding: 2vh ;
   }
 
   #navbar ul {
@@ -231,7 +231,7 @@ button:active {
   }
 
   #navbar a {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 5px 8px;
   }
 
