@@ -13,8 +13,22 @@ import sgpacalcpic from "../../assets/sgpacalcpic.jpg";
 import tictactoe from "../../assets/tictactoe.jpg";
 import weather from "../../assets/weather.png";
 
+const projectDetails = [
+  { src: c4p, title: "Code4Placements", description: "A MERN stack based coding platform for coding and placement preparation." },
+  { src: spotify, title: "Spotify Clone", description: "Build a spotify clone using React.Js and Tailwind CSS as a practice project" },
+  { src: ems, title: "Employee Management System", description: "Made using React Js and Spring Boot to manage employee records." },
+  { src: bgarage, title: "Bike Garage", description: "Personal vehicle maintenance tracker using the MERN stack." },
+  { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
+  { src: cashbook, title: "Cashbook", description: "A personal cashbook application made using PHP." },
+  { src: kavoor, title: "Kavoor Website", description: "SOP Project made using React JS and Tailwind CSS." },
+  { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
+];
 
-
+const smallprojects = [
+  { src: sgpacalcpic, title: "SGPA Calculator", description: "Android app made using Kotlin and Android Studio." },
+  { src: weather, title: "Weather App", description: "Javascript practice project" },
+  { src: tictactoe, title: "Tic Tac Toe", description: "JavaScript Practice Project." },
+];
 
 const Projects = () => {
   return (
@@ -24,37 +38,27 @@ const Projects = () => {
       </div>
 
       <div className="projects-container">
-        <div className="p-subheading">
-          <p>MERN Stack | SpringBoot Projects</p>
-        </div>
-        <div className="projects-subcontainer">
-          <img src={c4p} alt="" />
-          <img src={spotify} alt="" />
-          <img src={ems} alt="" />
-          <img src={bgarage} alt="" />
-        </div>
+        {projectDetails.map((project, index) => (
+          <div className="project-card" key={index}>
+            <img src={project.src} alt={project.title} />
+            <div className="overlay">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
-        <div className="p-subheading">
-          <p>Personal & DBMS Mini Projects </p>
-        </div>
-        <div className="projects-subcontainer">
-          <img src={cybercrime} alt="" />
-          <img src={cashbook} alt="" />
-        </div>
-
-        <div className="p-subheading">
-          <p>Personal | Practice Projects </p>
-        </div>
-        <div className="projects-subcontainer">
-          <img src={kavoor} alt="" />
-          <img src={sat} alt="" />
-        </div>
-        <div className="projects-subcontainer-easy">
-          <img src={sgpacalcpic} alt="" />
-          <img src={weather} alt="" />
-          <img src={tictactoe} alt="" />
-
-        </div>
+      <div className="small-projects-container">
+        {smallprojects.map((project, index) => (
+          <div className="small-project-card" key={index}>
+            <img src={project.src} alt={project.title} />
+            <div className="overlay">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
