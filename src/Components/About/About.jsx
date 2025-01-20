@@ -14,8 +14,8 @@ const About = () => {
               <h3>Core Committee member</h3>
               <p>Skill Sphere Club · Canara Engineering College</p>
               <p>
-                Architect and develop a dynamic website aimed at assisting
-                users in finding their ideal homes based on their preferences.
+                Conducted sessions to teach problem solving and data structures
+                and algorithms.
               </p>
             </div>
           </div>
@@ -26,23 +26,22 @@ const About = () => {
               <h3>Ex - SDE Intern </h3>
               <p>Entertainment Technologists · Remote</p>
               <p>
-                Implemented proof of concept for an optimized resource
-                management and recommendation system.
-              </p>
+                Successfully completed a 3-month internship, gaining valuable
+                industry exposure and experience.
+                </p>
             </div>
           </div>
-          <div className="timeline-item">
+          {/* <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-date">Feb 2025 - Present</div>
             <div className="timeline-content">
               <h3>SDE Intern </h3>
               <p>Riskonnect Services Pvt Ltd · On Site</p>
               <p>
-                Implemented proof of concept for an optimized resource
-                management and recommendation system.
+                Joining on Feb 3
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
