@@ -113,7 +113,7 @@ const Home = () => {
             </div>
             <button
               onClick={() => {
-                const element = document.querySelector("#skills");
+                const element = document.querySelector("#about");
                 if (element) {
                   element.scrollIntoView({ behavior: "smooth" });
                 }

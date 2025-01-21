@@ -2,6 +2,8 @@
   min-height: 100vh;
   height: auto;
   padding: 10vh 2vw;
+  background: linear-gradient(to bottom, #0f0c29, #130f41, #24243e);
+
 }
 
 #projects h1 {

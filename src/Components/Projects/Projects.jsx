@@ -21,7 +21,7 @@ const projectDetails = [
   { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
   { src: cashbook, title: "Cashbook", description: "A personal cashbook application made using PHP." },
   { src: kavoor, title: "Kavoor Website", description: "SOP Project made using React JS and Tailwind CSS." },
-  { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
+  // { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
 ];
 
 const smallprojects = [
@@ -48,6 +48,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
 
       <div className="small-projects-container">
         {smallprojects.map((project, index) => (
