@@ -1,6 +1,6 @@
 #navbar {
   width: 100vw;
-  background: linear-gradient(rgba(24, 6, 44, 0.9), rgba(10, 1, 59, 0.5));
+  background: linear-gradient(rgba(24, 6, 44, 0.8), rgba(10, 1, 59, 0.9));
   position: fixed;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 
 #navbar ul {
   display: flex;
-  width: 70vw;
+  width: 75%;
   justify-content: space-evenly;
 }
 
