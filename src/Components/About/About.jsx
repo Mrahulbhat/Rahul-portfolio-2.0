@@ -31,17 +31,15 @@ const About = () => {
                 </p>
             </div>
           </div>
-          {/* <div className="timeline-item">
+          <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-date">Feb 2025 - Present</div>
             <div className="timeline-content">
               <h3>SDE Intern </h3>
               <p>Riskonnect Services Pvt Ltd · On Site</p>
-              <p>
-                Joining on Feb 3
-              </p>
+              <p></p>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
     </div>
