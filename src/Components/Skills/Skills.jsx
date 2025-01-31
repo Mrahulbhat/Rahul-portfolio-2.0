@@ -56,10 +56,10 @@ const Skills = () => {
             <img src={react} alt="" />
             <p>React.js</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={angular} alt="" />
             <p>Angular</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={node} alt="" />
             <p>Node.js</p>
@@ -103,10 +103,10 @@ const Skills = () => {
             <img src={php} alt="" />
             <p>PHP</p>
           </div>
-          {/* <div className="card">
+          <div className="card">
             <img src={vscode} alt="" />
             <p>VsCode</p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
