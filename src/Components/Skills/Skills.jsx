@@ -50,7 +50,7 @@ const Skills = () => {
           </div>
           <div className="card">
             <img src={c_sharp} alt="" />
-            <p>C Language</p>
+            <p>C Sharp</p>
           </div>
           <div className="card">
             <img src={react} alt="" />
