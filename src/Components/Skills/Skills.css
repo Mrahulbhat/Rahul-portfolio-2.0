@@ -15,7 +15,7 @@
   justify-self: center;
   width: 90%;
   padding: 3vh 3vw;
-  border: 1px solid #565688;
+  border: 1px solid #30304b;
   border-radius: 20px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 10vh;
@@ -23,19 +23,22 @@
 
 /* Hover Effect */
 .skills-container:hover {
-  box-shadow: 0 0 30px rgba(233, 4, 202, 0.9); /* Glowing effect */
-  transform: scale(1); /* Slightly enlarges the container */
+  box-shadow: 0 0 30px rgba(233, 4, 202, 0.9);
+  /* Glowing effect */
+  transform: scale(1);
+  /* Slightly enlarges the container */
   border: 1px solid #8306bd;
 
 }
 
 /* Optional: Add animation for individual child items inside the grid */
-.skills-container > * {
+.skills-container>* {
   transition: transform 0.2s ease;
 }
 
-.skills-container > *:hover {
-  transform: scale(1.1); /* Scale up grid items on hover */
+.skills-container>*:hover {
+  transform: scale(1.1);
+  /* Scale up grid items on hover */
 }
 
 
