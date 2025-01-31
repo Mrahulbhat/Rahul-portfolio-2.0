@@ -20,7 +20,7 @@ const projectDetails = [
   // { src: bgarage, title: "Vehicle Maintenance App", description: "Personal vehicle maintenance tracker using the MERN stack." },
   { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
   { src: cashbook, title: "Cashbook", description: "A personal cashbook application made using PHP." },
-  { src: kavoor, title: "Kavoor Website", description: "SOP Project made using React JS and Tailwind CSS." },
+  { src: kavoor, title: "Kavoor Temple Website", description: "SOP Activity Project made using React JS + Tailwind CSS." },
   // { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
 ];
 
