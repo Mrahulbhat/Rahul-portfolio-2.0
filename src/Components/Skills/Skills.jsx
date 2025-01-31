@@ -13,7 +13,8 @@ import express from "../../assets/express.svg";
 import postman from "../../assets/postman.svg";
 import mysql from "../../assets/mysql.svg";
 import spring from "../../assets/spring.svg";
-
+import c_sharp from "../../assets/c-sharp.svg"
+import angular from "../../assets/angular-icon.svg"
 import bootstrap from "../../assets/bootstrap.svg";
 import tailwind from "../../assets/tailwind.svg";
 import php from "../../assets/php.svg";
@@ -48,8 +49,16 @@ const Skills = () => {
             <p>C Language</p>
           </div>
           <div className="card">
+            <img src={c_sharp} alt="" />
+            <p>C Language</p>
+          </div>
+          <div className="card">
             <img src={react} alt="" />
             <p>React.js</p>
+          </div>
+          <div className="card">
+            <img src={angular} alt="" />
+            <p>Angular</p>
           </div>
           <div className="card">
             <img src={node} alt="" />
@@ -76,10 +85,8 @@ const Skills = () => {
             <p>MySQL</p>
           </div>
 
-          <div className="card">
-            <img src={postgres} alt="" />
-            <p>Postgres</p>
-          </div>
+
+
           <div className="card">
             <img src={hibernate} alt="" />
             <p>Hibernate</p>
@@ -96,10 +103,10 @@ const Skills = () => {
             <img src={php} alt="" />
             <p>PHP</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={vscode} alt="" />
             <p>VsCode</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
