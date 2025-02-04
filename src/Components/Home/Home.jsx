@@ -9,7 +9,7 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
-  const words = ["Full Stack Dev", "MERN | SpringBoot"];
+  const words = ["SDE Intern @ Riskonnect" ,"Aspiring Full Stack Dev"];
 
   useEffect(() => {
     const typeEffect = () => {
@@ -74,12 +74,12 @@ const Home = () => {
               </ins>
             </h1>
 
-            <h2>SDE Intern @ Riskonnect</h2>
+            <h2>SDE Intern <span style={{color:"#bd53ed"}}>@ Riskonnect</span> </h2>
             <br />
-            <h1>
+            {/* <h1>
               {" "}
               <span className="dynamic-text"> {dynamicText}</span>
-            </h1>
+            </h1> */}
 
             <div className="contact-container">
               <a
