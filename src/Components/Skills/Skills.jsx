@@ -18,7 +18,7 @@ import angular from "../../assets/angular-icon.svg"
 import bootstrap from "../../assets/bootstrap.svg";
 import tailwind from "../../assets/tailwind.svg";
 import php from "../../assets/php.svg";
-import postgres from "../../assets/postgres.svg";
+import typescript from "../../assets/typescript.svg";
 import hibernate from "../../assets/hibernate.svg";
 import vscode from "../../assets/vscode.svg";
 
@@ -41,6 +41,10 @@ const Skills = () => {
             <p>JavaScript</p>
           </div>
           <div className="card">
+            <img src={typescript} alt="" />
+            <p>TypeScript</p>
+          </div>
+          <div className="card">
             <img src={java} alt="" />
             <p>Java</p>
           </div>
@@ -56,10 +60,10 @@ const Skills = () => {
             <img src={react} alt="" />
             <p>React.js</p>
           </div>
-          {/* <div className="card">
+          <div className="card">
             <img src={angular} alt="" />
             <p>Angular</p>
-          </div> */}
+          </div>
           <div className="card">
             <img src={node} alt="" />
             <p>Node.js</p>
@@ -70,7 +74,7 @@ const Skills = () => {
           </div>
           <div className="card">
             <img src={mongodb} alt="" />
-            <p>Node.js</p>
+            <p>MongoDB</p>
           </div>
           <div className="card">
             <img src={spring} alt="" />
@@ -87,10 +91,10 @@ const Skills = () => {
 
 
 
-          <div className="card">
+          {/* <div className="card">
             <img src={hibernate} alt="" />
             <p>Hibernate</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={bootstrap} alt="" />
             <p>Bootstrap</p>
@@ -103,10 +107,10 @@ const Skills = () => {
             <img src={php} alt="" />
             <p>PHP</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={vscode} alt="" />
             <p>VsCode</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
