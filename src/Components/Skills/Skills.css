@@ -20,7 +20,6 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 10vh;
 }
-
 /* Hover Effect */
 .skills-container:hover {
   box-shadow: 0 0 30px rgba(233, 4, 202, 0.9);

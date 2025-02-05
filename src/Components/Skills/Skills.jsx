@@ -52,10 +52,10 @@ const Skills = () => {
             <img src={c} alt="" />
             <p>C Language</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={c_sharp} alt="" />
             <p>C Sharp</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={react} alt="" />
             <p>React.js</p>
