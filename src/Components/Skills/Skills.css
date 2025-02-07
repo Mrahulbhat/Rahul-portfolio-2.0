@@ -8,10 +8,10 @@
 .skills-container {
   display: grid;
   margin-top: 10vh;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   column-gap: 3vw;
-  row-gap: 3vh;
+  row-gap: 2vh;
   justify-self: center;
   width: 90%;
   padding: 3vh 3vw;
