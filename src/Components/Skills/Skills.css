@@ -9,9 +9,11 @@
   display: grid;
   margin-top: 10vh;
   grid-template-columns: repeat(4, 1fr);
+  /* change this later*/
   grid-template-rows: auto;
   column-gap: 3vw;
   row-gap: 2vh;
+  /* change this later*/
   justify-self: center;
   width: 90%;
   padding: 3vh 3vw;
@@ -20,6 +22,7 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 10vh;
 }
+
 /* Hover Effect */
 .skills-container:hover {
   box-shadow: 0 0 30px rgba(233, 4, 202, 0.9);
