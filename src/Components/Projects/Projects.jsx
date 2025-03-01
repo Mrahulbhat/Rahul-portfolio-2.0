@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 
 import c4p from "../../assets/c4p.png";
-import spotify from "../../assets/spotify.png";
+import spotify from "../../assets/spotify.jpg";
 import ems from "../../assets/ems.jpg";
 import cybercrime from "../../assets/cybercrime.png";
 import cashbook from "../../assets/cashbook.png";
@@ -15,7 +15,7 @@ import weather from "../../assets/weather.png";
 
 const projectDetails = [
   { src: c4p, title: "Code4Placements", description: "A MERN stack based coding platform for coding and placement preparation." },
-  { src: spotify, title: "Spotify Clone", description: "Build a spotify clone using React.Js and Tailwind CSS as a practice project" },
+  { src: spotify, title: "Indian Music Genre Classification", description: "My Final Year Machine Learning Project using MERN Stack & FLASK"},
   // { src: bgarage, title: "Vehicle Maintenance App", description: "Personal vehicle maintenance tracker using the MERN stack." },
   { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
   { src: cashbook, title: "Cashbook", description: "A personal cashbook application made using PHP." },
