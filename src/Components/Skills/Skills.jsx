@@ -1,4 +1,4 @@
-import React from "react";
+import "react";
 import "./Skills.css";
 
 import html from "../../assets/html.svg";
@@ -12,15 +12,15 @@ import mongodb from "../../assets/mongodb.svg";
 import express from "../../assets/express.svg";
 import postman from "../../assets/postman.svg";
 import mysql from "../../assets/mysql.svg";
-import spring from "../../assets/spring.svg";
-import c_sharp from "../../assets/c-sharp.svg"
+// import spring from "../../assets/spring.svg";
+// import c_sharp from "../../assets/c-sharp.svg"
 import angular from "../../assets/angular-icon.svg"
 import bootstrap from "../../assets/bootstrap.svg";
 import tailwind from "../../assets/tailwind.svg";
-import php from "../../assets/php.svg";
+// import php from "../../assets/php.svg";
 import typescript from "../../assets/typescript.svg";
-import hibernate from "../../assets/hibernate.svg";
-import vscode from "../../assets/vscode.svg";
+// import hibernate from "../../assets/hibernate.svg";
+import playwright from "../../assets/playwright.svg";
 
 const Skills = () => {
   return (
@@ -60,10 +60,10 @@ const Skills = () => {
             <img src={react} alt="" />
             <p>React.js</p>
           </div>
-          {/* <div className="card">
+          <div className="card">
             <img src={angular} alt="" />
             <p>Angular</p>
-          </div> */}
+          </div>
           <div className="card">
             <img src={node} alt="" />
             <p>Node.js</p>
@@ -76,10 +76,10 @@ const Skills = () => {
             <img src={mongodb} alt="" />
             <p>MongoDB</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={spring} alt="" />
             <p>Spring Boot</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={postman} alt="" />
             <p>Postman API</p>
@@ -88,13 +88,6 @@ const Skills = () => {
             <img src={mysql} alt="" />
             <p>MySQL</p>
           </div>
-
-
-
-          {/* <div className="card">
-            <img src={hibernate} alt="" />
-            <p>Hibernate</p>
-          </div> */}
           <div className="card">
             <img src={bootstrap} alt="" />
             <p>Bootstrap</p>
@@ -104,13 +97,9 @@ const Skills = () => {
             <p>Tailwind</p>
           </div>
           <div className="card">
-            <img src={php} alt="" />
-            <p>PHP</p>
+            <img src={playwright} alt="" />
+            <p>Playwright</p>
           </div>
-          {/* <div className="card">
-            <img src={vscode} alt="" />
-            <p>VsCode</p>
-          </div> */}
         </div>
       </div>
     </div>
