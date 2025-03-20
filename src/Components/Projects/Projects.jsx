@@ -14,7 +14,7 @@ import tictactoe from "../../assets/tictactoe.jpg";
 import weather from "../../assets/weather.png";
 
 const projectDetails = [
-  { src: c4p, title: "Code4Placements", description: "A MERN stack based coding platform for coding and placement preparation." },
+  { src: c4p, title: "Code4Placements", description: "Designed a coding platform to track my coding and placement preparation." },
   { src: spotify, title: "Indian Music Genre Classification", description: "My Final Year Machine Learning Project using MERN Stack & FLASK"},
   // { src: bgarage, title: "Vehicle Maintenance App", description: "Personal vehicle maintenance tracker using the MERN stack." },
   { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
