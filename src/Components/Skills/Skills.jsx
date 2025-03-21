@@ -48,10 +48,10 @@ const Skills = () => {
             <img src={java} alt="" />
             <p>Java</p>
           </div>
-          <div className="card">
+{/*           <div className="card">
             <img src={c} alt="" />
             <p>C Language</p>
-          </div>
+          </div> */}
           {/* <div className="card">
             <img src={c_sharp} alt="" />
             <p>C Sharp</p>
@@ -80,18 +80,18 @@ const Skills = () => {
             <img src={spring} alt="" />
             <p>Spring Boot</p>
           </div> */}
-          <div className="card">
+{/*           <div className="card">
             <img src={postman} alt="" />
             <p>Postman API</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={mysql} alt="" />
             <p>MySQL</p>
           </div>
-          <div className="card">
+{/*           <div className="card">
             <img src={bootstrap} alt="" />
             <p>Bootstrap</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={tailwind} alt="" />
             <p>Tailwind</p>
