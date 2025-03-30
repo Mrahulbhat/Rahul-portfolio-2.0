@@ -6,16 +6,16 @@ import css from "../../assets/css.svg";
 import js from "../../assets/js.svg";
 import java from "../../assets/java.svg";
 import react from "../../assets/react.svg";
-import c from "../../assets/c.svg";
+// import c from "../../assets/c.svg";
 import node from "../../assets/node.svg";
 import mongodb from "../../assets/mongodb.svg";
 import express from "../../assets/express.svg";
-import postman from "../../assets/postman.svg";
-import mysql from "../../assets/mysql.svg";
+// import postman from "../../assets/postman.svg";
+// import mysql from "../../assets/mysql.svg";
 // import spring from "../../assets/spring.svg";
 // import c_sharp from "../../assets/c-sharp.svg"
 import angular from "../../assets/angular-icon.svg"
-import bootstrap from "../../assets/bootstrap.svg";
+// import bootstrap from "../../assets/bootstrap.svg";
 import tailwind from "../../assets/tailwind.svg";
 // import php from "../../assets/php.svg";
 import typescript from "../../assets/typescript.svg";
@@ -48,10 +48,10 @@ const Skills = () => {
             <img src={java} alt="" />
             <p>Java</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={c} alt="" />
             <p>C Language</p>
-          </div>
+          </div> */}
           {/* <div className="card">
             <img src={c_sharp} alt="" />
             <p>C Sharp</p>
@@ -80,18 +80,18 @@ const Skills = () => {
             <img src={spring} alt="" />
             <p>Spring Boot</p>
           </div> */}
-          <div className="card">
+          {/* <div className="card">
             <img src={postman} alt="" />
             <p>Postman API</p>
-          </div>
-          <div className="card">
+          </div> */}
+          {/* <div className="card">
             <img src={mysql} alt="" />
             <p>MySQL</p>
-          </div>
-          <div className="card">
+          </div> */}
+          {/* <div className="card">
             <img src={bootstrap} alt="" />
             <p>Bootstrap</p>
-          </div>
+          </div> */}
           <div className="card">
             <img src={tailwind} alt="" />
             <p>Tailwind</p>
