@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./Projects.css";
 
 import c4p from "../../assets/c4p.png";
@@ -7,8 +7,6 @@ import ems from "../../assets/ems.jpg";
 import cybercrime from "../../assets/cybercrime.png";
 import cashbook from "../../assets/cashbook.png";
 import kavoor from "../../assets/kavoor.jpg";
-import sat from "../../assets/sat.png";
-import bgarage from "../../assets/bgarage.png";
 import sgpacalcpic from "../../assets/sgpacalcpic.jpg";
 import tictactoe from "../../assets/tictactoe.jpg";
 import weather from "../../assets/weather.png";

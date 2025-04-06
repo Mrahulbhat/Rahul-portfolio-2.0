@@ -1,7 +1,34 @@
-import React from "react";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./About.css";
 
 const About = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate timeline items
+    gsap.fromTo(
+      ".timeline-item",
+      {
+        opacity: 0,
+        y: 50, // Start below the viewport
+      },
+      {
+        opacity: 1,
+        y: 0, // Move to original position
+        duration: 1,
+        stagger: 0.3, // Delay between each item
+        scrollTrigger: {
+          trigger: ".timeline", // Start animation when the timeline container is in view
+          start: "top 60%", // Trigger when the top of the timeline is 60% down the viewport
+          end: "bottom 40%", // End when the bottom of the timeline is 40% up the viewport
+          toggleActions: "play none none reverse", // Play animation on scroll down, reverse on scroll up
+        },
+      }
+    );
+  }, []);
+
   return (
     <div id="about">
       <section id="experience">
@@ -28,7 +55,7 @@ const About = () => {
               <p>
                 Successfully completed a 3-month internship, gaining valuable
                 industry exposure and experience.
-                </p>
+              </p>
             </div>
           </div>
           <div className="timeline-item">
