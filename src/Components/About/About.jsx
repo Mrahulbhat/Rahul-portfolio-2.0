@@ -52,7 +52,7 @@ const About = () => {
             <div className="timeline-content">
               <h3>SDE Intern </h3>
               <p>Riskonnect Services Pvt Ltd · On Site</p>
-              <p></p>
+              <p>Part of the ClearSight R&D team, working on enterprise-grade Angular and .NET application.</p>
             </div>
           </div>
         </div>
