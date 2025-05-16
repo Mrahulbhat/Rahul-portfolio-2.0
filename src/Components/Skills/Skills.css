@@ -43,7 +43,6 @@
   /* Scale up grid items on hover */
 }
 
-
 #skills .card {
   display: block;
   padding: 2vh;
@@ -72,7 +71,7 @@
 @media (max-width: 768px) {
   .skills-container {
     border: 1px solid #565688;
-    margin-top: 4vh;
+    margin-top: 7vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1vw;
@@ -94,7 +93,7 @@
   }
 
   #skills .card p {
-    margin-top: 1.5vh;
+    margin-top: 3.5vh;
   }
 
   #skills h1 {

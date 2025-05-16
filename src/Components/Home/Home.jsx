@@ -37,7 +37,7 @@ const Home = () => {
             </h1>
 
             <h2>
-              SDE Intern <span style={{ color: "#bd53ed" }}>@ Riskonnect</span>{" "}
+              SDE Intern <span style={{ color: "#bd53ed" }}>@ Riskonnect</span>
             </h2>
             <br />
             <div className="contact-container">
