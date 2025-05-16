@@ -332,11 +332,11 @@ button:active {
 
 @media (max-width: 768px) {
   #home{
-    height: 90vh;
+    height: 100vh;
   }
 
   .container {
-    margin-top: 25vh;
+    margin-top: 30vh;
     padding-right: 5vw;
     flex-direction: column-reverse;
     align-items: center;
@@ -344,7 +344,7 @@ button:active {
   }
 
   .text-container {
-    margin-top: 0vh;
+    margin-top: 1vh;
     width: 90%;
     margin-bottom: 0vh;
   }
@@ -354,7 +354,7 @@ button:active {
     color: white;
   }
   .text-container h1 span {
-    margin-top: 2 vh;
+    /* margin-top: 2vh; */
     font-size: 1.5rem !important;
   }
   .img-container {

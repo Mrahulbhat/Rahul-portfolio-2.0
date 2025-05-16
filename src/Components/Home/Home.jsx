@@ -1,42 +1,7 @@
-import { useState, useEffect } from "react";
 import "../Home/Home.css";
-import dp from "../../assets/dp.png"; // Your profile picture
-import { useNavigate } from "react-router-dom";
+import dp from "../../assets/dp.png"; 
 
 const Home = () => {
-  const navigator = useNavigate();
-  const [dynamicText, setDynamicText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [wordIndex, setWordIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const words = ["SDE Intern @ Riskonnect", "Aspiring Full Stack Dev"];
-
-  useEffect(() => {
-    const typeEffect = () => {
-      const currentWord = words[wordIndex];
-      const isWordComplete = !isDeleting && charIndex === currentWord.length;
-      const isWordDeleted = isDeleting && charIndex === 0;
-
-      if (isWordComplete) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
-      } else if (isWordDeleted) {
-        setIsDeleting(false);
-        setWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Move to next word
-      } else {
-        setCharIndex((prevIndex) =>
-          isDeleting ? prevIndex - 1 : prevIndex + 1
-        );
-      }
-    };
-
-    const timer = setTimeout(typeEffect, isDeleting ? 50 : 100); // Typing and deleting speed
-    return () => clearTimeout(timer); // Cleanup timeout
-  }, [charIndex, isDeleting, wordIndex, words]);
-
-  useEffect(() => {
-    setDynamicText(words[wordIndex].substring(0, charIndex));
-  }, [charIndex, wordIndex, words]);
-
   return (
     <div id="home-page">
       <div id="navbar">
