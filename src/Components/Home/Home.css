@@ -46,7 +46,7 @@
   height: 50vh;
   width: 88%;
   max-width: 1200px;
-  margin-left: auto;  
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -56,7 +56,8 @@
   width: 70%;
 }
 .text-container h1 {
-  font-size: 2rem;
+  padding: 2px;
+  font-size: 2.5rem;
 }
 
 .text-container h2 {
@@ -67,7 +68,7 @@
 
 .text-container h1 span {
   color: #bd53ed;
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   display: inline-block;
   position: relative;
 }
@@ -89,7 +90,8 @@
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -114,10 +116,6 @@
   border: 3px solid #bd53ed;
   object-fit: cover;
 }
-/* 
-.img-container img:hover {
-  animation: glowUp 1.1s ease-in-out infinite alternate;
-} */
 
 @keyframes glowUp {
   0% {
@@ -130,10 +128,8 @@
   }
 }
 
-/* contact */
-
 .contact-container {
-  margin-top: 5vh;
+  margin-top: 2vh;
   width: 40%;
   display: flex;
   justify-content: space-between;
@@ -142,13 +138,13 @@
 .contact-container a i {
   font-size: 5vh;
   color: white;
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-container a i:hover {
-  font-size: 6vh; /* Slightly bigger on hover */
+  font-size: 6vh;
   color: #bd53ed;
-  transform: scale(1.1); /* Slightly enlarge the icon */
+  transform: scale(1.1);
 }
 
 button {
@@ -180,7 +176,7 @@ button:active {
 /* ----------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 768px) {
-  #home{
+  #home {
     height: 100vh;
   }
 
@@ -194,17 +190,24 @@ button:active {
 
   .text-container {
     margin-top: 1vh;
-    width: 90%;
+    width: 100%;
     margin-bottom: 0vh;
+  }
+
+  .text-container h1 {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  .text-container h1 span {
+    font-size: 1.8rem !important;
   }
 
   .text-container h2 {
     font-size: 1.25rem;
     color: white;
   }
-  .text-container h1 span {
-    font-size: 1.5rem !important;
-  }
+
   .img-container {
     width: 70%;
     justify-content: center;
@@ -218,7 +221,7 @@ button:active {
 
   #navbar {
     height: auto;
-    padding: 3vh ;
+    padding: 3vh;
   }
 
   #navbar ul {
@@ -251,13 +254,13 @@ button:active {
   .contact-container a i {
     font-size: 1.7rem;
     color: white;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transition: all 0.3s ease-in-out;
   }
 
   .contact-container a i:hover {
-    font-size: 6vh; /* Slightly bigger on hover */
+    font-size: 6vh;
     color: #bd53ed;
-    transform: scale(1.1); /* Slightly enlarge the icon */
+    transform: scale(1.1);
   }
 
   button {

@@ -1,5 +1,5 @@
 import "../Home/Home.css";
-import dp from "../../assets/dp.png"; 
+import dp from "../../assets/dp.png";
 
 const Home = () => {
   return (
@@ -24,22 +24,15 @@ const Home = () => {
         <div className="container">
           <div className="text-container">
             <h1>
-              Hi, I am{" "}
-              <ins
-                style={{
-                  color: "#bd53ed",
-                  fontSize: "2rem",
-                  textDecoration: "none",
-                }}
-              >
-                Rahul 👋
-              </ins>
+              Hi, I am <span style={{ color: "#bd53ed" }}>Rahul 👋</span>
             </h1>
 
             <h2>
-              SDE Intern <span style={{ color: "#bd53ed" }}>@ Riskonnect</span>
+              SDE Intern <span style={{ color: "#bd53ed" }}> @ Riskonnect</span>
             </h2>
+
             <br />
+
             <div className="contact-container">
               <a
                 href="https://www.instagram.com/rxhul_bhxt/"
@@ -52,7 +45,7 @@ const Home = () => {
                 href="https://www.linkedin.com/in/m-rahul-bhat-/"
                 target="_blank"
                 rel="noopener noreferrer"
-              > 
+              >
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
