@@ -10,22 +10,69 @@ import kavoor from "../../assets/kavoor.jpg";
 import sgpacalcpic from "../../assets/sgpacalcpic.jpg";
 import tictactoe from "../../assets/tictactoe.jpg";
 import weather from "../../assets/weather.png";
+import ServiceCare from "../../assets/ServiceCare.png";
 
 const projectDetails = [
-  { src: c4p, title: "Code4Placements", description: "Designed a coding platform to track my coding and placement preparation." },
-  { src: spotify, title: "Indian Music Genre Classification", description: "My Final Year Machine Learning Project using MERN Stack & FLASK"},
-  // { src: bgarage, title: "Vehicle Maintenance App", description: "Personal vehicle maintenance tracker using the MERN stack." },
-  { src: cybercrime, title: "Cyber Crime Tracker", description: "A PHP based DBMS mini-project for tracking cybercrime incidents." },
-  { src: cashbook, title: "Cashbook", description: "A personal cashbook application made using PHP." },
-  { src: ems, title: "Employee Management System", description: "Made using React Js and Spring Boot to manage employee records." },
-  { src: kavoor, title: "Kavoor Temple Website", description: "SOP Activity Project made using React JS + Tailwind CSS." },
+  {
+    src: c4p,
+    title: "Code4Placements",
+    description:
+      "Designed a coding platform to track my coding and placement preparation.",
+  },
+  {
+    src: spotify,
+    title: "Indian Music Genre Classification",
+    description:
+      "My Final Year Machine Learning Project using MERN Stack & FLASK",
+  },
+  {
+    src: ServiceCare,
+    title: "Service Care",
+    description:
+      "A service booking app made using MERN STACK. Hosted on Vercel and Render.",
+  },
+  {
+    src: cybercrime,
+    title: "Cyber Crime Tracker",
+    description:
+      "A PHP based DBMS mini-project for tracking cybercrime incidents.",
+  },
+  {
+    src: cashbook,
+    title: "Cashbook",
+    description: "A personal cashbook application made using PHP.",
+  },
+  {
+    src: ems,
+    title: "Employee Management System",
+    description:
+      "Made using React Js and Spring Boot to manage employee records.",
+  },
+  {
+    src: kavoor,
+    title: "Kavoor Temple Website",
+    description: "SOP Activity Project made using React JS + Tailwind CSS.",
+  },
+   
   // { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
 ];
 
 const smallprojects = [
-  { src: sgpacalcpic, title: "SGPA Calculator", description: "Android app made using Kotlin and Android Studio." },
-  { src: weather, title: "Weather App", description: "Javascript practice project" },
-  { src: tictactoe, title: "Tic Tac Toe", description: "JavaScript Practice Project." },
+  {
+    src: sgpacalcpic,
+    title: "SGPA Calculator",
+    description: "Android app made using Kotlin and Android Studio.",
+  },
+  {
+    src: weather,
+    title: "Weather App",
+    description: "Javascript practice project",
+  },
+  {
+    src: tictactoe,
+    title: "Tic Tac Toe",
+    description: "JavaScript Practice Project.",
+  },
 ];
 
 const Projects = () => {
@@ -46,7 +93,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-
 
       <div className="small-projects-container">
         {smallprojects.map((project, index) => (
