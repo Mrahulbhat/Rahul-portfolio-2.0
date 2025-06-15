@@ -11,6 +11,7 @@ import sgpacalcpic from "../../assets/sgpacalcpic.jpg";
 import tictactoe from "../../assets/tictactoe.jpg";
 import weather from "../../assets/weather.png";
 import ServiceCare from "../../assets/ServiceCare.png";
+import sat from "../../assets/sat.png";
 
 const projectDetails = [
   {
@@ -53,8 +54,7 @@ const projectDetails = [
     title: "Kavoor Temple Website",
     description: "SOP Activity Project made using React JS + Tailwind CSS.",
   },
-   
-  // { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
+  { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
 ];
 
 const smallprojects = [
