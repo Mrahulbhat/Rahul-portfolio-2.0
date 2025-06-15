@@ -3,10 +3,10 @@ import "./Projects.css";
 
 import c4p from "../../assets/c4p.png";
 import spotify from "../../assets/spotify.jpg";
-import ems from "../../assets/ems.jpg";
+// import ems from "../../assets/ems.jpg";
 import cybercrime from "../../assets/cybercrime.png";
 import cashbook from "../../assets/cashbook.png";
-import kavoor from "../../assets/kavoor.jpg";
+// import kavoor from "../../assets/kavoor.jpg";
 import sgpacalcpic from "../../assets/sgpacalcpic.jpg";
 import tictactoe from "../../assets/tictactoe.jpg";
 import weather from "../../assets/weather.png";
@@ -43,17 +43,17 @@ const projectDetails = [
     title: "Cashbook",
     description: "A personal cashbook application made using PHP.",
   },
-  {
-    src: ems,
-    title: "Employee Management System",
-    description:
-      "Made using React Js and Spring Boot to manage employee records.",
-  },
-  {
-    src: kavoor,
-    title: "Kavoor Temple Website",
-    description: "SOP Activity Project made using React JS + Tailwind CSS.",
-  },
+  // {
+  //   src: ems,
+  //   title: "Employee Management System",
+  //   description:
+  //     "Made using React Js and Spring Boot to manage employee records.",
+  // },
+  // {
+  //   src: kavoor,
+  //   title: "Kavoor Temple Website",
+  //   description: "SOP Activity Project made using React JS + Tailwind CSS.",
+  // },
   { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
 ];
 
