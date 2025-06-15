@@ -30,7 +30,7 @@ const projectDetails = [
     src: ServiceCare,
     title: "Service Care",
     description:
-      "A service booking app made using MERN STACK. Hosted on Vercel and Render.",
+      "Personal Vehicle Maintenance Tracking app made using React.js, Express.js, Node.js, MongoDB, Tailwind CSS, Zustand, DaisyUI and ShadCN. Hosted on Vercel and Render.",
   },
   {
     src: cybercrime,
