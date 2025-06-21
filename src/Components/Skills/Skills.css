@@ -4,16 +4,29 @@
   padding: 10vh 10vw;
 }
 
+/* Title Animation */
+.skills-title {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.8s ease-out;
+}
 
+.skills-title.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Container Animation */
 .skills-container {
   display: grid;
   margin-top: 10vh;
   grid-template-columns: repeat(4, 1fr);
-  /* change this later*/
   grid-template-rows: auto;
   column-gap: 3vw;
   row-gap: 2vh;
-  /* change this later*/
   justify-self: center;
   width: 90%;
   padding: 3vh 3vw;
@@ -21,28 +34,24 @@
   border-radius: 20px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 10vh;
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+}
+
+.skills-container.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover Effect */
 .skills-container:hover {
   box-shadow: 0 0 30px rgba(233, 4, 202, 0.9);
-  /* Glowing effect */
-  transform: scale(1);
-  /* Slightly enlarges the container */
+  transform: scale(1.02);
   border: 1px solid #8306bd;
-
 }
 
-/* Optional: Add animation for individual child items inside the grid */
-.skills-container>* {
-  transition: transform 0.2s ease;
-}
-
-.skills-container>*:hover {
-  transform: scale(1.1);
-  /* Scale up grid items on hover */
-}
-
+/* Card Animation */
 #skills .card {
   display: block;
   padding: 2vh;
@@ -50,16 +59,59 @@
   text-align: center;
   font-weight: 800;
   font-size: 1rem;
-  /* border: 1px solid white; */
+  opacity: 0;
+  transform: translateY(30px) rotateX(15deg);
+  transition: all 0.6s ease-out;
+}
+
+#skills .card.animate-in {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+  animation: cardBounce 0.6s ease-out forwards;
+}
+
+/* Card Bounce Animation */
+@keyframes cardBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) rotateX(15deg) scale(0.9);
+  }
+  60% {
+    transform: translateY(-5px) rotateX(0deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg) scale(1);
+  }
+}
+
+/* Enhanced Hover Effect for Cards */
+#skills .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(233, 4, 202, 0.3);
+  transition: all 0.3s ease;
+}
+
+#skills .card img {
+  transition: transform 0.3s ease;
+}
+
+#skills .card:hover img {
+  transform: scale(1.1) rotate(5deg);
 }
 
 #skills .card p {
   margin-top: 1.5vh;
+  transition: color 0.3s ease;
+}
+
+#skills .card:hover p {
+  color: #e904ca;
 }
 
 #skills h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -68,6 +120,25 @@
   width: 100%;
 }
 
+/* Floating Animation for Cards */
+.skills-container.animate-in .card {
+  animation: float 6s ease-in-out infinite;
+}
+
+.skills-container.animate-in .card:nth-child(odd) {
+  animation-delay: -3s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .skills-container {
     border: 1px solid #565688;
@@ -82,6 +153,10 @@
     border-radius: 20px;
   }
 
+  .skills-title {
+    font-size: 2.2rem;
+  }
+
   #skills .card {
     display: block;
     padding: 1vh;
@@ -89,21 +164,41 @@
     text-align: center;
     font-weight: 800;
     font-size: 0.6rem;
-    /* border: 1px solid #565688; */
   }
 
   #skills .card p {
     margin-top: 3.5vh;
   }
 
-  #skills h1 {
-    color: white;
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
   #skills img {
     height: 2.2rem;
     width: 100%;
+  }
+
+  /* Reduce floating animation on mobile */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* Accessibility - Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .skills-title,
+  .skills-container,
+  #skills .card {
+    transition: none;
+    animation: none;
+  }
+  
+  .skills-title.animate-in,
+  .skills-container.animate-in,
+  #skills .card.animate-in {
+    opacity: 1;
+    transform: none;
   }
 }

@@ -1,4 +1,4 @@
-import "react";
+import React, { useEffect, useRef } from "react";
 import "./Skills.css";
 
 import html from "../../assets/html.svg";
@@ -6,100 +6,94 @@ import css from "../../assets/css.svg";
 import js from "../../assets/js.svg";
 import java from "../../assets/java.svg";
 import react from "../../assets/react.svg";
-// import c from "../../assets/c.svg";
 import node from "../../assets/node.svg";
 import mongodb from "../../assets/mongodb.svg";
 import express from "../../assets/express.svg";
-// import postman from "../../assets/postman.svg";
-// import mysql from "../../assets/mysql.svg";
-// import spring from "../../assets/spring.svg";
-// import c_sharp from "../../assets/c-sharp.svg"
-import angular from "../../assets/angular-icon.svg"
-// import bootstrap from "../../assets/bootstrap.svg";
+import angular from "../../assets/angular-icon.svg";
 import tailwind from "../../assets/tailwind.svg";
-// import php from "../../assets/php.svg";
 import typescript from "../../assets/typescript.svg";
-// import hibernate from "../../assets/hibernate.svg";
 import playwright from "../../assets/playwright.svg";
 
 const Skills = () => {
+  const skillsRef = useRef(null);
+  const titleRef = useRef(null);
+  const containerRef = useRef(null);
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe title
+    if (titleRef.current) {
+      observer.observe(titleRef.current);
+    }
+
+    // Observe container
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    // Observe each card
+    cardsRef.current.forEach((card, index) => {
+      if (card) {
+        // Add staggered delay
+        card.style.animationDelay = `${index * 0.1}s`;
+        observer.observe(card);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const addToRefs = (el, index) => {
+    if (el && !cardsRef.current.includes(el)) {
+      cardsRef.current[index] = el;
+    }
+  };
+
+  const skillsData = [
+    { img: html, name: "Html" },
+    { img: css, name: "CSS" },
+    { img: js, name: "JavaScript" },
+    { img: typescript, name: "TypeScript" },
+    { img: java, name: "Java" },
+    { img: react, name: "React.js" },
+    { img: angular, name: "Angular" },
+    { img: node, name: "Node.js" },
+    { img: express, name: "Express.js" },
+    { img: mongodb, name: "MongoDB" },
+    { img: tailwind, name: "Tailwind" },
+    { img: playwright, name: "Playwright" }
+  ];
+
   return (
-    <div id="skills">
+    <div id="skills" ref={skillsRef}>
       <div>
-        <h1>Skills | Tech Stack </h1>
-        <div className="skills-container">
-          <div className="card">
-            <img src={html} alt="" />
-            <p>Html</p>
-          </div>
-          <div className="card">
-            <img src={css} alt="" />
-            <p>CSS</p>
-          </div>
-          <div className="card">
-            <img src={js} alt="" />
-            <p>JavaScript</p>
-          </div>
-          <div className="card">
-            <img src={typescript} alt="" />
-            <p>TypeScript</p>
-          </div>
-          <div className="card">
-            <img src={java} alt="" />
-            <p>Java</p>
-          </div>
-          {/* <div className="card">
-            <img src={c} alt="" />
-            <p>C Language</p>
-          </div> */}
-          {/* <div className="card">
-            <img src={c_sharp} alt="" />
-            <p>C Sharp</p>
-          </div> */}
-          <div className="card">
-            <img src={react} alt="" />
-            <p>React.js</p>
-          </div>
-          <div className="card">
-            <img src={angular} alt="" />
-            <p>Angular</p>
-          </div>
-          <div className="card">
-            <img src={node} alt="" />
-            <p>Node.js</p>
-          </div>
-          <div className="card">
-            <img src={express} alt="" />
-            <p>Express.js</p>
-          </div>
-          <div className="card">
-            <img src={mongodb} alt="" />
-            <p>MongoDB</p>
-          </div>
-          {/* <div className="card">
-            <img src={spring} alt="" />
-            <p>Spring Boot</p>
-          </div> */}
-          {/* <div className="card">
-            <img src={postman} alt="" />
-            <p>Postman API</p>
-          </div> */}
-          {/* <div className="card">
-            <img src={mysql} alt="" />
-            <p>MySQL</p>
-          </div> */}
-          {/* <div className="card">
-            <img src={bootstrap} alt="" />
-            <p>Bootstrap</p>
-          </div> */}
-          <div className="card">
-            <img src={tailwind} alt="" />
-            <p>Tailwind</p>
-          </div>
-          <div className="card">
-            <img src={playwright} alt="" />
-            <p>Playwright</p>
-          </div>
+        <h1 ref={titleRef} className="skills-title">Skills | Tech Stack</h1>
+        <div className="skills-container" ref={containerRef}>
+          {skillsData.map((skill, index) => (
+            <div 
+              key={skill.name}
+              className="card" 
+              ref={(el) => addToRefs(el, index)}
+            >
+              <img src={skill.img} alt={skill.name} />
+              <p>{skill.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
