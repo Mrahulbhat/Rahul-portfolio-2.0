@@ -81,11 +81,6 @@ const Home = () => {
               <span className="company"> @ Riskonnect</span>
             </h2>
 
-            <p className="description">
-              Passionate about creating innovative solutions and building
-              amazing user experiences
-            </p>
-
             <div className="contact-container">
               <a
                 href="https://www.instagram.com/rxhul_bhxt/"
@@ -365,6 +360,7 @@ const Home = () => {
         .name-highlight {
           background: linear-gradient(45deg, #b068d2, #b61ffc, #468af7);
           background-clip: text;
+          text-decoration:none;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           position: relative;
@@ -592,7 +588,7 @@ const Home = () => {
         }
 
         #profile-pic {
-          width: 100%;
+          width: 1000%;
           height: 100%;
           border-radius: 50%;
           object-fit: cover;
@@ -654,6 +650,15 @@ const Home = () => {
             gap: 1rem;
           }
 
+              .description {
+          display:none
+            font-size: 1rem;
+          }
+
+          #navbar h1{
+            display:none;
+          }
+
           .logo {
             font-size: 1.5rem;
           }
@@ -670,7 +675,7 @@ const Home = () => {
           .container {
             flex-direction: column-reverse;
             text-align: center;
-            margin-top: 20vh;
+            margin-top: 10vh;
             gap: 3rem;
           }
 
@@ -691,8 +696,8 @@ const Home = () => {
           }
 
           .profile-wrapper {
-            width: 280px;
-            height: 280px;
+            width: 10vh;
+            height: 10vw;
           }
 
           .contact-container {
@@ -724,6 +729,7 @@ const Home = () => {
           }
 
           .description {
+          display:none
             font-size: 1rem;
           }
 
