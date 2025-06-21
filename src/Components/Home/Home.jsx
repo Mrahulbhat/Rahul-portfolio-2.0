@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import dp from "../../../src/assets/dp.png"
-
+import React, { useState, useEffect } from "react";
+import dp from "../../../src/assets/dp.png";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     setIsVisible(true);
-    
+
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -31,9 +30,9 @@ const Home = () => {
         <div className="floating-orb orb-2"></div>
         <div className="floating-orb orb-3"></div>
       </div>
-      
+
       {/* Cursor follower */}
-      <div 
+      <div
         className="cursor-follower"
         style={{
           left: mousePosition.x,
@@ -68,7 +67,7 @@ const Home = () => {
       </div>
 
       <div id="home">
-        <div className={`container ${isVisible ? 'fade-in' : ''}`}>
+        <div className={`container ${isVisible ? "fade-in" : ""}`}>
           <div className="text-container">
             <div className="greeting">
               <h1 className="main-title">
@@ -76,14 +75,15 @@ const Home = () => {
                 <span className="wave">👋</span>
               </h1>
             </div>
-            
+
             <h2 className="subtitle">
               <span className="role">SDE Intern</span>
               <span className="company"> @ Riskonnect</span>
             </h2>
-            
+
             <p className="description">
-              Passionate about creating innovative solutions and building amazing user experiences
+              Passionate about creating innovative solutions and building
+              amazing user experiences
             </p>
 
             <div className="contact-container">
@@ -141,11 +141,7 @@ const Home = () => {
           <div className="img-container">
             <div className="profile-wrapper">
               <div className="profile-ring"></div>
-              <img 
-                id="profile-pic" 
-                src={dp}
-                alt="dp" 
-              />
+              <img id="profile-pic" src={dp} alt="Rahul - Software Developer" />
               <div className="profile-glow"></div>
             </div>
           </div>
@@ -160,15 +156,25 @@ const Home = () => {
         }
 
         body {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-          background: linear-gradient(135deg, #0a0a0a 0%, #1a0b2e 50%, #16213e 100%);
+          font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+          background: linear-gradient(
+            135deg,
+            #0a0a0a 0%,
+            #1a0b2e 50%,
+            #16213e 100%
+          );
           overflow-x: hidden;
         }
 
         #home-page {
           min-height: 100vh;
           position: relative;
-          background: linear-gradient(135deg, #0a0a0a 0%, #1a0b2e 50%, #16213e 100%);
+          background: linear-gradient(
+            135deg,
+            #0a0a0a 0%,
+            #1a0b2e 50%,
+            #16213e 100%
+          );
         }
 
         /* Background animations */
@@ -186,7 +192,11 @@ const Home = () => {
         .floating-orb {
           position: absolute;
           border-radius: 50%;
-          background: linear-gradient(45deg, rgba(189, 83, 237, 0.1), rgba(70, 138, 247, 0.1));
+          background: linear-gradient(
+            45deg,
+            rgba(189, 83, 237, 0.1),
+            rgba(70, 138, 247, 0.1)
+          );
           animation: float 6s ease-in-out infinite;
         }
 
@@ -215,7 +225,8 @@ const Home = () => {
         }
 
         @keyframes float {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0) rotate(0deg);
           }
           50% {
@@ -228,7 +239,11 @@ const Home = () => {
           position: fixed;
           width: 20px;
           height: 20px;
-          background: radial-gradient(circle, rgba(189, 83, 237, 0.3), transparent);
+          background: radial-gradient(
+            circle,
+            rgba(189, 83, 237, 0.3),
+            transparent
+          );
           border-radius: 50%;
           pointer-events: none;
           transform: translate(-50%, -50%);
@@ -276,36 +291,17 @@ const Home = () => {
         }
 
         .nav-link {
-          position: relative;
           font-weight: 600;
           font-size: 1rem;
           color: rgba(255, 255, 255, 0.8);
           text-decoration: none;
           padding: 0.5rem 1rem;
           border-radius: 8px;
-          transition: all 0.3s ease;
-          overflow: hidden;
-        }
-
-        .nav-link::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(45deg, rgba(189, 83, 237, 0.1), rgba(70, 138, 247, 0.1));
-          transition: left 0.3s ease;
-          z-index: -1;
-        }
-
-        .nav-link:hover::before {
-          left: 0;
+          transition: color 0.3s ease;
         }
 
         .nav-link:hover {
           color: white;
-          transform: translateY(-2px);
         }
 
         /* Enhanced Home Section */
@@ -375,7 +371,7 @@ const Home = () => {
         }
 
         .name-highlight::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -5px;
           left: 0;
@@ -401,9 +397,16 @@ const Home = () => {
         }
 
         @keyframes wave {
-          0%, 100% { transform: rotate(0deg); }
-          25% { transform: rotate(20deg); }
-          75% { transform: rotate(-10deg); }
+          0%,
+          100% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(20deg);
+          }
+          75% {
+            transform: rotate(-10deg);
+          }
         }
 
         .subtitle {
@@ -503,13 +506,17 @@ const Home = () => {
         }
 
         .cta-button::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: -100%;
           width: 100%;
           height: 100%;
-          background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent);
+          background: linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.1),
+            transparent
+          );
           transition: left 0.3s ease;
         }
 
@@ -527,8 +534,13 @@ const Home = () => {
         }
 
         @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(5px); }
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(5px);
+          }
         }
 
         /* Enhanced Profile Image */
@@ -571,8 +583,12 @@ const Home = () => {
         }
 
         @keyframes rotate {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
         }
 
         #profile-pic {
@@ -591,14 +607,19 @@ const Home = () => {
           left: -30px;
           right: -30px;
           bottom: -30px;
-          background: radial-gradient(circle, rgba(189, 83, 237, 0.3), transparent);
+          background: radial-gradient(
+            circle,
+            rgba(189, 83, 237, 0.3),
+            transparent
+          );
           border-radius: 50%;
           animation: pulse 3s ease-in-out infinite;
           z-index: 1;
         }
 
         @keyframes pulse {
-          0%, 100% {
+          0%,
+          100% {
             transform: scale(1);
             opacity: 0.7;
           }
@@ -613,12 +634,12 @@ const Home = () => {
           .main-title {
             font-size: 3rem;
           }
-          
+
           .container {
             width: 95%;
             margin-top: 12vh;
           }
-          
+
           .profile-wrapper {
             width: 350px;
             height: 350px;
