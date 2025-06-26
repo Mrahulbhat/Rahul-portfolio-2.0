@@ -54,7 +54,7 @@ const projectDetails = [
   //   title: "Kavoor Temple Website",
   //   description: "SOP Activity Project made using React JS + Tailwind CSS.",
   // },
-  { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made studets build this" },
+  { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made students build this" },
 ];
 
 const smallprojects = [
