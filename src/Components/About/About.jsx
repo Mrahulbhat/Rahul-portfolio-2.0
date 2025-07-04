@@ -40,19 +40,22 @@ const About = () => {
             <div className="timeline-content">
               <h3>Core Committee member</h3>
               <p>Skill Sphere Club · Canara Engineering College</p>
-              <p>
-                Conducted sessions to teach problem solving and data structures
-                and algorithms.
-              </p>
             </div>
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">Feb 2025 - Present</div>
+            <div className="timeline-date">Feb 2025 - July 31</div>
             <div className="timeline-content">
               <h3>SDE Intern </h3>
-              <p>Riskonnect Services Pvt Ltd · On Site</p>
-              <p>Part of the ClearSight R&D team, working on an enterprise-grade product built using Angular and .NET technologies.</p>
+              <p>Riskonnect Services Pvt Ltd</p>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-date">Aug 2025 - Present</div>
+            <div className="timeline-content">
+              <h3>Software Engineer</h3>
+              <p>Riskonnect Services Pvt Ltd</p>
             </div>
           </div>
         </div>
