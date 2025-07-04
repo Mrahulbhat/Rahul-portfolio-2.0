@@ -1,204 +1,148 @@
-#skills {
-  min-height: 100vh;
-  height: auto;
-  padding: 10vh 10vw;
+/* Skills Section Styles */
+.skills-section {
+  padding: 6rem 12vw;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #111827 0%, #000000 50%, #111827 100%);
+  color: white;
 }
 
-/* Title Animation */
+.skills-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .skills-title {
-  color: white;
   font-size: 2.5rem;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(-30px);
-  transition: all 0.8s ease-out;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
 }
 
-.skills-title.animate-in {
-  opacity: 1;
-  transform: translateY(0);
+.skills-underline {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #8245ec;
+  margin: 0 auto;
+  margin-top: 0.5rem;
 }
 
-/* Container Animation */
+.skills-description {
+  color: #9ca3af;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 2.5rem 0;
+  justify-content: space-between;
+}
+
+.skill-category {
+  background-color: #111827;
+  backdrop-filter: blur(12px);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid white;
+  box-shadow: 0 0 20px 1px rgba(130, 69, 236, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px 2px rgba(130, 69, 236, 0.4);
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-grid {
   display: grid;
-  margin-top: 10vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  column-gap: 3vw;
-  row-gap: 2vh;
-  justify-self: center;
-  width: 90%;
-  padding: 3vh 3vw;
-  border: 1px solid #30304b;
-  border-radius: 20px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  margin-bottom: 10vh;
-  opacity: 0;
-  transform: translateY(50px) scale(0.95);
-}
-
-.skills-container.animate-in {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  transition: opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover Effect */
-.skills-container:hover {
-  box-shadow: 0 0 30px rgba(233, 4, 202, 0.9);
-  transform: scale(1.02);
-  border: 1px solid #8306bd;
-}
-
-/* Card Animation */
-#skills .card {
-  display: block;
-  padding: 2vh;
-  color: white;
-  text-align: center;
-  font-weight: 800;
-  font-size: 1rem;
-  opacity: 0;
-  transform: translateY(30px) rotateX(15deg);
-  transition: all 0.6s ease-out;
-}
-
-#skills .card.animate-in {
-  opacity: 1;
-  transform: translateY(0) rotateX(0deg);
-  animation: cardBounce 0.6s ease-out forwards;
-}
-
-/* Card Bounce Animation */
-@keyframes cardBounce {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) rotateX(15deg) scale(0.9);
-  }
-  60% {
-    transform: translateY(-5px) rotateX(0deg) scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) rotateX(0deg) scale(1);
-  }
-}
-
-/* Enhanced Hover Effect for Cards */
-#skills .card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 30px rgba(233, 4, 202, 0.3);
-  transition: all 0.3s ease;
-}
-
-#skills .card img {
-  transition: transform 0.3s ease;
-}
-
-#skills .card:hover img {
-  transform: scale(1.1) rotate(5deg);
-}
-
-#skills .card p {
-  margin-top: 1.5vh;
-  transition: color 0.3s ease;
-}
-
-#skills .card:hover p {
-  color: #e904ca;
-}
-
-#skills h1 {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-}
-
-#skills img {
-  height: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
   width: 100%;
 }
 
-/* Floating Animation for Cards */
-.skills-container.animate-in .card {
-  animation: float 6s ease-in-out infinite;
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #374151;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
 }
 
-.skills-container.animate-in .card:nth-child(odd) {
-  animation-delay: -3s;
+.skill-item:hover {
+  border-color: #6b7280;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
+.skill-logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 0.75rem;
+  color: #d1d5db;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .skills-container {
-    border: 1px solid #565688;
-    margin-top: 7vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    column-gap: 1vw;
-    row-gap: 2vh;
-    justify-self: center;
-    width: 100%;
-    padding: 5vh 5vw;
-    border-radius: 20px;
+@media (min-width: 640px) {
+  .skills-section {
+    padding: 6rem 7vw;
   }
-
+  
   .skills-title {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
-
-  #skills .card {
-    display: block;
-    padding: 1vh;
-    color: white;
-    text-align: center;
-    font-weight: 800;
-    font-size: 0.6rem;
+  
+  .skills-container {
+    gap: 1.25rem;
   }
-
-  #skills .card p {
-    margin-top: 3.5vh;
+  
+  .skill-category {
+    width: 48%;
+    padding: 1.5rem 2.5rem;
   }
-
-  #skills img {
-    height: 2.2rem;
-    width: 100%;
+  
+  .category-title {
+    font-size: 1.875rem;
   }
-
-  /* Reduce floating animation on mobile */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-2px);
-    }
+  
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .skill-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .skill-name {
+    font-size: 0.875rem;
   }
 }
 
-/* Accessibility - Respect reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  .skills-title,
-  .skills-container,
-  #skills .card {
-    transition: none;
-    animation: none;
-  }
-  
-  .skills-title.animate-in,
-  .skills-container.animate-in,
-  #skills .card.animate-in {
-    opacity: 1;
-    transform: none;
+@media (min-width: 1024px) {
+  .skills-section {
+    padding: 6rem 20vw;
   }
 }

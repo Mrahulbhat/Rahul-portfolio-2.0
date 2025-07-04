@@ -17,6 +17,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-globe.gl": "^2.31.0",
+    "react-parallax-tilt": "^1.7.299",
     "react-router-dom": "^7.1.2",
     "tailwindcss": "^4.1.10",
     "three": "^0.172.0"
