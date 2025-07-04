@@ -17,7 +17,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       {/* Section Title */}
       <div className="section-title">
-        <h2 className="title">PROJECTS</h2>
+        <h2 className="title">Projects</h2>
         <div className="title-underline"></div>
       </div>
 
