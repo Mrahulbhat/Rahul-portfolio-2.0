@@ -50,8 +50,8 @@
   margin-bottom: 2.5rem;
   width: 100%;
   border-radius: 1rem;
-  border: 1px solid white;
-  box-shadow: 0 0 20px 1px rgba(130, 69, 236, 0.3);
+  border: 1px solid rgb(122, 55, 247);
+  box-shadow: 0 0 20px 1px rgba(78, 19, 180, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -63,7 +63,7 @@
 .category-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #9ca3af;
+  color: #cdbbef;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -81,7 +81,7 @@
   justify-content: center;
   gap: 0.5rem;
   background-color: transparent;
-  border: 2px solid #374151;
+  border: 2px solid #663e93;
   border-radius: 1.5rem;
   padding: 0.5rem;
   text-align: center;
@@ -89,7 +89,7 @@
 }
 
 .skill-item:hover {
-  border-color: #6b7280;
+  border-color: #a174ea;
 }
 
 .skill-logo {
