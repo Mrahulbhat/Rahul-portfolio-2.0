@@ -6,7 +6,6 @@ import reactjsLogo from './assets/tech_logo/reactjs.png';
 import angularLogo from './assets/tech_logo/angular.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import materialuiLogo from './assets/tech_logo/materialui.png';
-import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
@@ -24,7 +23,6 @@ import php from './assets/tech_logo/php.svg';
 import playwright from './assets/playwright.svg'
 import kotlin from './assets/kotlin.svg';
 import reactnative from './assets/tech_logo/reactnative.svg'
-
 
 
 // Project Section Logo's
