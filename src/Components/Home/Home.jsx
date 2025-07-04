@@ -571,7 +571,7 @@ const Home = () => {
           left: -20px;
           right: -20px;
           bottom: -20px;
-          border: 3px solid transparent;
+          border: 1px solid transparent;
           border-radius: 50%;
           background: linear-gradient(45deg, #b068d2, #b61ffc, #468af7);
           background-clip: padding-box;
