@@ -128,8 +128,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .company-logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
     margin-bottom: 0.75rem;
   }
   
