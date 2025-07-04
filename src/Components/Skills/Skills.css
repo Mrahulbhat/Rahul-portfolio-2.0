@@ -145,7 +145,11 @@
   .skills-section {
     padding: 6rem 20vw;
   }
-  .category-title {
-    font-size: 1rem;
-  }
+  .skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
 }
