@@ -109,33 +109,33 @@
   .skills-section {
     padding: 6rem 7vw;
   }
-  
+
   .skills-title {
     font-size: 2.25rem;
   }
-  
+
   .skills-container {
     gap: 1.25rem;
   }
-  
+
   .skill-category {
     width: 48%;
     padding: 1.5rem 2.5rem;
   }
-  
+
   .category-title {
     font-size: 1.875rem;
   }
-  
+
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .skill-logo {
     width: 2rem;
     height: 2rem;
   }
-  
+
   .skill-name {
     font-size: 0.875rem;
   }
@@ -146,6 +146,6 @@
     padding: 6rem 20vw;
   }
   .category-title {
-  font-size: 1rem;
-}
+    font-size: 1rem;
+  }
 }
