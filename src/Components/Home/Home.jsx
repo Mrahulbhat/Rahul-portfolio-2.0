@@ -565,12 +565,12 @@ const Home = () => {
           height: 400px;
         }
 
-        .profile-ring {
+       .profile-ring {
           position: absolute;
-          top: -20px;
-          left: -20px;
-          right: -20px;
-          bottom: -20px;
+          top: -8px;
+          left: -8px;
+          right: -8px;
+          bottom: -8px;
           border: 1px solid transparent;
           border-radius: 50%;
           background: linear-gradient(45deg, #b068d2, #b61ffc, #468af7);
