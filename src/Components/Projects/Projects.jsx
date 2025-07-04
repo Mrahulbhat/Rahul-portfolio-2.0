@@ -1,111 +1,125 @@
-// import React from "react";
+import React, { useState } from "react";
+import { projects } from "../../constants";
 import "./Projects.css";
 
-import c4p from "../../assets/c4p.png";
-import spotify from "../../assets/spotify.jpg";
-// import ems from "../../assets/ems.jpg";
-import cybercrime from "../../assets/cybercrime.png";
-import cashbook from "../../assets/cashbook.png";
-// import kavoor from "../../assets/kavoor.jpg";
-import sgpacalcpic from "../../assets/sgpacalcpic.jpg";
-import tictactoe from "../../assets/tictactoe.jpg";
-import weather from "../../assets/weather.png";
-import ServiceCare from "../../assets/ServiceCare.png";
-import sat from "../../assets/sat.png";
-
-const projectDetails = [
-  {
-    src: c4p,
-    title: "Code4Placements",
-    description:
-      "Designed a coding platform to track my coding and placement preparation.",
-  },
-  {
-    src: spotify,
-    title: "Indian Music Genre Classification",
-    description:
-      "My Final Year Machine Learning Project using MERN Stack & FLASK",
-  },
-  {
-    src: ServiceCare,
-    title: "Service Care",
-    description:
-      "Personal Vehicle Maintenance Tracking app made using React.js, Express.js, Node.js, MongoDB, Tailwind CSS, Zustand, DaisyUI and ShadCN. Hosted on Vercel and Render.",
-  },
-  {
-    src: cybercrime,
-    title: "Cyber Crime Tracker",
-    description:
-      "A PHP based DBMS mini-project for tracking cybercrime incidents.",
-  },
-  {
-    src: cashbook,
-    title: "Cashbook",
-    description: "A personal cashbook application made using PHP.",
-  },
-  // {
-  //   src: ems,
-  //   title: "Employee Management System",
-  //   description:
-  //     "Made using React Js and Spring Boot to manage employee records.",
-  // },
-  // {
-  //   src: kavoor,
-  //   title: "Kavoor Temple Website",
-  //   description: "SOP Activity Project made using React JS + Tailwind CSS.",
-  // },
-  { src: sat, title: "SAT Prep App", description: "Conducted a workshop and built their school website and made students build this" },
-];
-
-const smallprojects = [
-  {
-    src: sgpacalcpic,
-    title: "SGPA Calculator",
-    description: "Android app made using Kotlin and Android Studio.",
-  },
-  {
-    src: weather,
-    title: "Weather App",
-    description: "Javascript practice project",
-  },
-  {
-    src: tictactoe,
-    title: "Tic Tac Toe",
-    description: "JavaScript Practice Project.",
-  },
-];
-
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
-    <div id="projects">
-      <div>
-        <h1>My Projects</h1>
+    <section id="projects" className="projects-section">
+      {/* Section Title */}
+      <div className="section-title">
+        <h2 className="title">PROJECTS</h2>
+        <div className="title-underline"></div>
       </div>
 
-      <div className="projects-container">
-        {projectDetails.map((project, index) => (
-          <div className="project-card" key={index}>
-            <img src={project.src} alt={project.title} />
-            <div className="overlay">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+      {/* Projects Grid */}
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            onClick={() => handleOpenModal(project)}
+            className="project-card"
+          >
+            <div className="project-image-container">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+            </div>
+            <div className="project-content">
+              <h3 className="project-title">
+                {project.title}
+              </h3>
+              <p className="project-description">
+                {project.description}
+              </p>
+              <div className="project-tags">
+                {project.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="tag"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="small-projects-container">
-        {smallprojects.map((project, index) => (
-          <div className="small-project-card" key={index}>
-            <img src={project.src} alt={project.title} />
-            <div className="overlay">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+      {/* Modal Container */}
+      {selectedProject && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                onClick={handleCloseModal}
+                className="close-button"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div className="modal-body">
+              <div className="modal-image-container">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="modal-image"
+                />
+              </div>
+              <div className="modal-details">
+                <h3 className="modal-title">
+                  {selectedProject.title}
+                </h3>
+                <p className="modal-description">
+                  {selectedProject.description}
+                </p>
+                <div className="modal-tags">
+                  {selectedProject.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="tag"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                {/* <div className="modal-buttons">
+                  <a
+                    href={selectedProject.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button button-secondary"
+                  >
+                    View Code
+                  </a>
+                  <a
+                    href={selectedProject.webapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button button-primary"
+                  >
+                    View Live
+                  </a>
+                </div> */}
+              </div>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      )}
+    </section>
   );
 };
 
