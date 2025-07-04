@@ -18,7 +18,7 @@ const About = () => {
     {
       id: 2,
       date: "Feb 2025 - July 31",
-      title: "SDE Intern",
+      title: "Software Developer Intern",
       company: "Riskonnect Services Pvt Ltd",
       logo: rk,
       logoAlt: "Riskonnect Services"
