@@ -28,7 +28,7 @@
 .timeline {
   position: relative;
   margin: 0 auto;
-  width: 80%;
+  width: 40%;
   padding-left: 2rem;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
@@ -65,7 +65,7 @@
 }
 
 .timeline-content {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
