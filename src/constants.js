@@ -30,6 +30,7 @@ import c4p from './assets/c4p.png';
 import spotify from './assets/spotify.jpg'
 import serviceCare from './assets/ServiceCare.png'
 import cybercrime from './assets/cybercrime.png'
+import cashbook from './assets/cashbook.png'
 
 
 export const SkillsInfo = [
@@ -125,7 +126,7 @@ export const projects = [
         id: 4,
         title: "Cashbook App",
         description: "A PHP based DBMS mini-project for tracking cybercrime incidents",
-        image: cybercrime,
+        image: cashbook,
         tags: ["HTML", "CSS", "JavaScript", "PHP", "MYSQL", "XAMPP Server"],
         github: "https://github.com/codingmastr/cmtk-email-validator",
         webapp: "https://www.npmjs.com/package/cmtk-email-validator",
