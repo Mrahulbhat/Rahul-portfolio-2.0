@@ -82,20 +82,9 @@ export const SkillsInfo = [
     },
 ];
 
-
 export const projects = [
     {
         id: 0,
-        title: "Code 4 Placements",
-        description:
-            "Designed a coding platform to track my coding and placement preparation",
-        image: c4p,
-        tags: ["React JS", "Mongo DB", "Node JS", "Express Js", "Tailwind CSS"],
-        github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-        webapp: "https://githubprofiledetective.netlify.app/",
-    },
-    {
-        id: 1,
         title: "Indian Music Genre Classification",
         description: "My Final year machine Learning Project",
         image: spotify,
@@ -104,14 +93,22 @@ export const projects = [
         webapp: "https://csprep.netlify.app/",
     },
     {
-        id: 2,
+        id: 1,
         title: "Service Care",
-        description:
-            "Personal Vehicle Maintenance Tracking for Web, iOS & Android App",
+        description: "Personal Vehicle Maintenance Tracking for Web, iOS & Android App",
         image: serviceCare,
         tags: ["React JS", "Express JS", "Node JS", "Mongo DB", "Daisy UI", "Tailwind CSS", "React Native"],
         github: "https://github.com/codingmastr/Movie-Recommendation-App",
         webapp: "https://movie-recommendation-app-jet.vercel.app/",
+    },
+    {
+        id: 2,
+        title: "Code 4 Placements",
+        description: "Designed a coding platform to track my coding and placement preparation",
+        image: c4p,
+        tags: ["React JS", "Mongo DB", "Node JS", "Express Js", "Tailwind CSS"],
+        github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
+        webapp: "https://githubprofiledetective.netlify.app/",
     },
     {
         id: 3,
@@ -125,7 +122,7 @@ export const projects = [
     {
         id: 4,
         title: "Cashbook App",
-        description: "A PHP based DBMS mini-project for tracking cybercrime incidents",
+        description: "A PHP based cashbook app to track my expenses",
         image: cashbook,
         tags: ["HTML", "CSS", "JavaScript", "PHP", "MYSQL", "XAMPP Server"],
         github: "https://github.com/codingmastr/cmtk-email-validator",
