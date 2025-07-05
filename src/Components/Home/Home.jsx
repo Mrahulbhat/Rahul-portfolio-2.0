@@ -77,7 +77,7 @@ const Home = () => {
             </div>
 
             <h2 className="subtitle">
-              <span className="role">SDE Intern</span>
+              <span className="role">Software Engineer</span>
               <span className="company"> @ Riskonnect</span>
             </h2>
 

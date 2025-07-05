@@ -2,7 +2,7 @@
 #about {
   height: auto;
   width: 100%;
-  background: linear-gradient(to bottom, #1f1c2c, #928dab);
+  background: linear-gradient(to bottom, #1f1c2c, #494757);
   color: white;
 }
 
@@ -14,7 +14,7 @@
 /* Timeline Section */
 #experience {
   padding: 15vh 5vw;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(to bottom, #0f0c29, #25205e, #24243e);
   color: white;
 }
 
