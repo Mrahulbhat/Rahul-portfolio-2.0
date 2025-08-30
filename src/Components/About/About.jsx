@@ -26,7 +26,7 @@ const About = () => {
     {
       id: 3,
       date: "Aug 2025 - Present",
-      title: "Associate QA Software Engineer",
+      title: "Associate Automation QA Engineer",
       company: "Riskonnect Services Pvt Ltd",
       logo: rk,
       logoAlt: "Riskonnect Services"
